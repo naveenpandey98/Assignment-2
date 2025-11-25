@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laundry Services — Hero</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(180deg, #fff 0%, #fbfdff 60%);
+      color: #3b4b52
+    }
+
+    /* NAVBAR */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 28px;
+      color: #3b4b52
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      font-size: 16px;
+      color: #6f7b80
+    }
+
+    .nav-center a {
+      color: inherit;
+      text-decoration: none;
+      padding: 8px 4px
+    }
+
+    .nav-btn {
+      background: rgba(10, 160, 230, 0.08);
+      padding: 20px 20px;
+      border-radius: 14px;
+      color: #09a6ff;
+      font-weight: 600
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 40px 24px;
+      display: flex;
+      align-items: center;
+      gap: 28px
+    }
+
+    .hero-left {
+      flex: 1 1 56%;
+      padding: 40px 24px
+    }
+
+    .hero-right {
+      flex: 0 0 44%;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin: 0 0 18px;
+      font-weight: 800;
+      color: #3b4b52
+    }
+
+    .highlight {
+      color: #09a6ff;
+      display: block
+    }
+
+    .lead {
+      color: #9ba7b0;
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 620px;
+      margin-bottom: 34px
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 18px 34px;
+      border-radius: 14px;
+      background: linear-gradient(90deg, #09a6ff, #0aa0e6);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 10px 28px rgba(9, 166, 255, 0.18)
+    }
+
+    /* Image styling */
+    .device {
+      max-width: 520px;
+      width: 100%;
+      border-radius: 22px;
+      box-shadow: 0 30px 60px rgba(15, 40, 60, 0.08);
+      background: linear-gradient(180deg, #fff, #f7fbff);
+      padding: 18px
+    }
+
+    .device img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px
+    }
+
+    /* Responsive */
+    @media (max-width:1000px) {
+      .hero {
+        flex-direction: column-reverse;
+        padding-top: 12px
+      }
+
+      .hero-left {
+        padding: 12px
+      }
+
+      .hero h1 {
+        font-size: 42px
+      }
+
+      .device {
+        max-width: 420px
+      }
+    }
+
+    @media (max-width:520px) {
+      .nav {
+        padding: 18px
+      }
+
+      .nav-center {
+        display: none
+      }
+
+      .hero {
+        padding: 16px
+      }
+
+      .hero-left {
+        padding: 12px
+      }
+
+      .hero h1 {
+        font-size: 34px
+      }
+
+      .lead {
+        font-size: 15px
+      }
+
+      .cta {
+        padding: 14px 20px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="logo">Logo</div>
+    <nav class="nav-center">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="nav-btn">Username</div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-left">
+      <h1>Revitalize Your Clothes with Expert<span class="highlight">Laundry Services!</span></h1>
+      <p class="lead">From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a
+        pickup and rediscover the freshness of your clothes today!</p>
+      <a class="cta" href="#">Book a service today!</a>
+    </div>
+    <div class="hero-right">
+      <div class="device">
+        <img src="assets/images/machine.png" alt="washing machine illustration">
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
